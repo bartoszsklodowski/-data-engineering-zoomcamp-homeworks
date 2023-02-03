@@ -1,0 +1,49 @@
+###
+### A complete description of a Prefect Deployment for flow 'etl-web-to-gcs-hm'
+###
+name: ETL-task4v3
+description: The main ETL function
+version: d6dddfe4ff15565df7befcf542236467
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: etl-web-to-gcs-hm
+manifest_path: null
+storage:
+  repository: https://github.com/bartoszsklodowski/-data-engineering-zoomcamp-homeworks.git
+  reference: null
+  access_token: '**********'
+  include_git_objects: true
+  _block_document_id: 2fa3fee7-54be-4b52-97e0-29275a95cac4
+  _block_document_name: github-connection
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
+entrypoint: homework2/etl_task4.py:etl_web_to_gcs_hm
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-02-03T18:41:00.777966+00:00'
